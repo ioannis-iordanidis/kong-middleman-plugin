@@ -9,7 +9,7 @@ version = "0.1.1-1"
 supported_platforms = {"linux", "macosx"}
 
 source = {
-  url = "https://github.com/pantsel/kong-middleman-plugin",
+  url = "https://github.com/ioannis-iordanidis/kong-middleman-plugin",
   tag = "0.1.1"
 }
 
@@ -24,9 +24,9 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ["kong.plugins.middleman.access"] = "src/access.lua",
-    ["kong.plugins.middleman.handler"] = "src/handler.lua",
-    ["kong.plugins.middleman.schema"] = "src/schema.lua",
-	["kong.plugins.middleman.json"] = "src/json.lua"
+    ["kong.plugins.middleman.access"] = "kong/plugins/middleman/access.lua",
+    ["kong.plugins.middleman.handler"] = "kong/plugins/middleman/handler.lua",
+    ["kong.plugins.middleman.schema"] = "kong/plugins/middleman/schema.lua",
+    ["kong.plugins.middleman.json"] = "kong/plugins/middleman/json.lua"
   }
 }
