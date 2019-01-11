@@ -11,7 +11,7 @@ RUN apk update && apk upgrade && \
 RUN git clone https://github.com/ioannis-iordanidis/kong-middleman-plugin /tmp/jwt \
 && cd /tmp/jwt \
 && git checkout master \
-&& mv /tmp/jwt/kong/plugins/kong-middleman-plugin /usr/local/share/lua/5.1/kong/plugins/kong-middleman-plugin
+&& mv /tmp/jwt/kong/plugins/middleman /usr/local/share/lua/5.1/kong/plugins/middleman
 
 ENV KONG_CUSTOM_PLUGINS=middleman
 
